@@ -72,7 +72,10 @@ export default function OurPhilosophy() {
           </p>
         </div>
         <div class="flex-1 pl-4">
-          <img src="/images/gold-testing.jpg" class="w-full" />
+          <img
+            src="/images/gold-testing.jpg"
+            class="w-full rounded-lg border-4 border-primary"
+          />
         </div>
       </div>
 
