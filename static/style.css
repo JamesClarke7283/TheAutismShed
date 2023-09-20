@@ -1,0 +1,11 @@
+* {
+    color: #6b625f;
+}
+
+div {
+    border-radius: 50px;
+}
+
+a:hover {
+    color: #a59491;
+}
