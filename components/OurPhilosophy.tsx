@@ -44,6 +44,37 @@ export default function OurPhilosophy() {
           </p>
         </div>
       </div>
+      <div class="flex flex-row items-start p-4">
+        <div class="flex-1 pr-4 min-w-0 max-w-full flex-2">
+          <h3 class="text-2xl text-left">
+            Gold Standard Testing
+          </h3>
+          <p class="text-left mt-2">
+            Accurately diagnosing autism can be complex, which is why it is
+            important to use tried and tested tools used by professionals who
+            have a depth of knowledge in autism.
+          </p>
+          <p class="text-left mt-2">
+            The Autism Diagnostic interview – Revised (ADI-R) is a systematic,
+            organised, and structured interview used for the diagnosis of
+            children, teenagers and adults with an autistic spectrum disorder.
+            In assessing with ASD, ADI-R together with ADOS-2 is used as the
+            Gold Standard.
+          </p>
+          <p class="text-left mt-2">
+            The Autism Diagnosic Observation Schedule (ADOSII) is a
+            semi-structured, standardised assessment of communication, social
+            interaction and play. This tool can be used in the assessment and
+            formulation process for toddlers to adults with varying degrees of
+            language skill. These tools supplement the multidisciplinary
+            evaluation approach along with evidence from family, school and work
+            setting settings.
+          </p>
+        </div>
+        <div class="flex-1 pl-4">
+          <img src="/images/gold-testing.jpg" class="w-full" />
+        </div>
+      </div>
 
       <p class="text-left mt-8">
         Autistic people should be assessed according to (DSM-V, British
