@@ -16,7 +16,7 @@ export default function Header({ active }: Props) {
       <div class="flex items-center flex-1">
         <img
           class="my-6"
-          src="/logo.png"
+          src="/logo.webp"
           width="128"
           height="128"
           alt="the Fresh logo: a sliced lemon dripping with juice"

@@ -6,7 +6,7 @@ export default function Home() {
   const grid_props = [
     {
       title: "Georgie Bainbridge",
-      img: "./images/staff/georgieb-1.jpg",
+      img: "./images/staff/georgieb-1.webp",
       tags: [
         "Director",
         "Chartered Psychologist",
@@ -19,7 +19,7 @@ export default function Home() {
     },
     {
       title: "Claire Madeira",
-      img: "./images/staff/clairem.jpg",
+      img: "./images/staff/clairem.webp",
       tags: [
         "Lead Paediatric Autism",
         "Highly Specialist Speech and Language Consultant",
@@ -28,13 +28,13 @@ export default function Home() {
     },
     {
       title: "Jim Sharman",
-      img: "./images/staff/placeholder-headshot.png",
+      img: "./images/staff/placeholder-headshot.webp",
       tags: ["Autism Specialist Mentor", "Inclusion Consultant"],
       url: "/jim-sharman",
     },
     {
       title: "Carrie Overton",
-      img: "./images/staff/carrieo.jpg",
+      img: "./images/staff/carrieo.webp",
       tags: ["Neurodiversity Coach", "SEN", "Education Consultant"],
       url: "/carrie-overton",
     },

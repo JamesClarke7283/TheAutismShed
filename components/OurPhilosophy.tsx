@@ -73,7 +73,7 @@ export default function OurPhilosophy() {
         </div>
         <div class="flex-1 pl-4">
           <img
-            src="/images/gold-testing.jpg"
+            src="/images/gold-testing.webp"
             class="w-full rounded-lg border-4 border-primary"
           />
         </div>
