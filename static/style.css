@@ -1,3 +1,22 @@
+@font-face {
+    font-family: 'OpenDyslexic3-Regular';
+    src: url('/fonts/OpenDyslexic3-Regular.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'OpenDyslexic3-Bold';
+    src: url('/fonts/OpenDyslexic3-Bold.ttf') format('truetype');
+  }
+
+  body * {
+    font-family: 'OpenDyslexic3-Regular', sans-serif;
+  }
+  
+  strong, b, h1, h2, h3, h4, h5, h6 .font-bold {
+    font-family: 'OpenDyslexic3-Bold', sans-serif;
+  }
+  
+
 * {
     color: #6b625f;
 }
