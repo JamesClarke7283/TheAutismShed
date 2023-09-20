@@ -23,9 +23,9 @@ export default function PhotoGrid({ title, grid_props }: GridProps) {
                 class="text-2xl"
                 style={{ color: "#6b625f" }}
               >
-                <a href={grid.url}>{grid.title}</a>
+                <a aria-label={grid.title} href={grid.url}>{grid.title}</a>
               </h3>
-              <a href={grid.url}>
+              <a aria-label={grid.title} href={grid.url}>
                 <img
                   src={grid.img}
                   aria-hidden="true"

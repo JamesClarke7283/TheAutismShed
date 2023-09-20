@@ -75,6 +75,7 @@ export default function OurPhilosophy() {
           <img
             src="/images/gold-testing.webp"
             class="w-full rounded-lg border-4 border-primary"
+            alt="Woman playing with child"
           />
         </div>
       </div>
