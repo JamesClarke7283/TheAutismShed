@@ -3,6 +3,7 @@ import Header from "../components/Header.tsx";
 
 export default function App({ Component, url }: AppProps) {
   const pathname = url.pathname;
+  const current_year = new Date().getFullYear();
   return (
     <html>
       <head>
@@ -14,7 +15,11 @@ export default function App({ Component, url }: AppProps) {
       <body>
         <Header active={pathname} />
         <Component />
+        <Header active={pathname} />
       </body>
+      <footer>
+        © The Autism Shed {current_year} All Rights Reserved.
+      </footer>
     </html>
   );
 }

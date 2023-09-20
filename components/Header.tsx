@@ -7,14 +7,14 @@ type Props = {
 export default function Header({ active }: Props) {
   const menus = [
     { name: "Home", href: "/" },
-    { name: "Autism Assesment", href: "/components" },
-    { name: "Contact", href: "/docs" },
+    { name: "Autism Assesment", href: "/autism-assessment-and-formulation" },
+    { name: "Contact", href: "/contact" },
   ];
 
   return (
     <div class="bg-white w-full max-w-screen-lg py-6 px-8 flex flex-col md:flex-row gap-4">
       <div class="flex items-center flex-1">
-      <img
+        <img
           class="my-6"
           src="/logo.png"
           width="128"

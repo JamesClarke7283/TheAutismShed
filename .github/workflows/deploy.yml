@@ -1,0 +1,31 @@
+name: Deploy TheAutismShed Website
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Deploy to Server
+      uses: appleboy/ssh-action@master
+      with:
+        host: james-clarke.ynh.fr
+        port: 1024
+        username: ${{ secrets.SERVER_USERNAME }}
+        password: ${{ secrets.SERVER_PASSWORD }}
+        script: |
+          rm -rf TheAutismShed
+          git clone https://github.com/JamesClarke7283/TheAutismShed
+          cd TheAutismShed
+          docker container stop theautismshed || true
+          docker container rm theautismshed || true
+          docker build -t theautismshed .
+          docker run -d --name theautismshed -p 6549:8000 theautismshed:latest
+          echo "Website is running on port 6549"
