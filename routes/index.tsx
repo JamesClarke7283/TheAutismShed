@@ -15,7 +15,7 @@ export default function Home() {
         "Psychotherapist UKCP",
         "Relational Doctoral Research Supervisor",
       ],
-      url: "/georgie-bainbridge",
+      url: "/staff/georgie-bainbridge",
     },
     {
       title: "Claire Madeira",
@@ -24,19 +24,19 @@ export default function Home() {
         "Lead Paediatric Autism",
         "Highly Specialist Speech and Language Consultant",
       ],
-      url: "/claire-madeira",
+      url: "/staff/claire-madeira",
     },
     {
       title: "Jim Sharman",
       img: "./images/staff/placeholder-headshot.webp",
       tags: ["Autism Specialist Mentor", "Inclusion Consultant"],
-      url: "/jim-sharman",
+      url: "/staff/jim-sharman",
     },
     {
       title: "Carrie Overton",
       img: "./images/staff/carrieo.webp",
       tags: ["Neurodiversity Coach", "SEN", "Education Consultant"],
-      url: "/carrie-overton",
+      url: "/staff/carrie-overton",
     },
   ];
   return (
