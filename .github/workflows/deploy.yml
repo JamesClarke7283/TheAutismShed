@@ -27,5 +27,5 @@ jobs:
           docker container stop theautismshed || true
           docker container rm theautismshed || true
           docker build -t theautismshed .
-          docker run -d --name theautismshed -p 6549:8000 -v /home/admin/docker-theautismshed:/ theautismshed:latest
+          docker run -d --name theautismshed -p 6549:8000 -v /home/admin/docker-theautismshed:/app theautismshed:latest
           echo "Website is running on port 6549"
