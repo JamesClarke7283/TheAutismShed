@@ -6,6 +6,8 @@ import twindConfig from "./twind.config.ts";
 export default defineConfig({
   plugins: [
     twindPlugin(twindConfig),
-    freshSEOPlugin(manifest),
+    freshSEOPlugin(manifest, {
+      include: ["/"],
+    }),
   ],
 });
