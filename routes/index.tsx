@@ -1,5 +1,5 @@
-import Wellcome from "../components/Wellcome.tsx";
 import PhotoGrid from "../components/PhotoGrid.tsx";
+import WellcomeImageCard from "../components/WellcomeImageCard.tsx";
 import OurPhilosophy from "../components/OurPhilosophy.tsx";
 
 export default function Home() {
@@ -41,7 +41,21 @@ export default function Home() {
   ];
   return (
     <>
-      <Wellcome />
+      <WellcomeImageCard />
+      <div class="text-center px-4 py-8 mx-10">
+        <h2 class="my-4">
+          The team here at the autism shed know from lived experience that
+          coming for diagnosis can be a confusing, disorienting and upsetting
+          time. The process can also be uplifting, freeing and empowering. We
+          are here with the experience, expertise and empathy to make the
+          process as positive as possible.
+        </h2>
+        <p class="my-4">
+          The British Psychological Society Guidelines (2021) advise that
+          assessment, formulation and diagnosis are carried out using gold
+          standard measures by a multi-disciplinary team.
+        </p>
+      </div>
       <PhotoGrid
         title="Meet the Multi-Disciplinary Team"
         grid_props={grid_props}

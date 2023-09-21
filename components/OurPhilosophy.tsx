@@ -74,7 +74,7 @@ export default function OurPhilosophy() {
         <div class="flex-1 pl-4">
           <img
             src="/images/gold-testing.webp"
-            class="w-full rounded-lg border-4 border-primary"
+            class="w-full border-4 border-primary"
             alt="Woman playing with child"
           />
         </div>
