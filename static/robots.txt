@@ -1,0 +1,5 @@
+User-agent: *
+Allow: *
+Disallow: /_frsh/
+
+Sitemap: https://new.theautismshed.com/sitemap.xml
