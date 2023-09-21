@@ -7,7 +7,23 @@ export default defineConfig({
   plugins: [
     twindPlugin(twindConfig),
     freshSEOPlugin(manifest, {
-      include: ["/"],
+      include: [
+        "/",
+        {
+          path: "/staff/georgie-bainbridge",
+          options: {
+            changefreq: "daily",
+            priority: "0.4",
+          },
+        },
+        {
+          path: "/contact",
+          options: {
+            changefreq: "weekly",
+            priority: "1.0",
+          },
+        },
+      ],
     }),
   ],
 });

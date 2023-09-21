@@ -1,11 +1,42 @@
 * {
     color: #6b625f;
 }
-
-div {
-    border-radius: 50px;
+html {
+    padding-left: 8rem;
+    padding-right: 8rem; 
+    background-color: #fff5f4;
+}
+body {
+    background-color: white;
 }
 
 a:hover {
     color: #a59491;
 }
+
+/* Define font faces */
+@font-face {
+    font-family: 'Metropolis';
+    src: url('./fonts/Metropolis-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Metropolis';
+    src: url('./fonts/Metropolis-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  /* Apply fonts */
+  body, p, li, a, span {
+    font-family: 'Metropolis', sans-serif;
+    font-weight: normal;
+  }
+  
+  h1, h2, h3, h4, h5, h6, strong, b {
+    font-family: 'Metropolis', sans-serif;
+    font-weight: bold;
+  }
+  

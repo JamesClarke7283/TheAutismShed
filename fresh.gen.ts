@@ -4,20 +4,19 @@
 
 import * as $0 from "./routes/_404.tsx";
 import * as $1 from "./routes/_app.tsx";
-import * as $2 from "./routes/index.tsx";
-import * as $3 from "./routes/staff/georgie-bainbridge.tsx";
-import * as $$0 from "./islands/Counter.tsx";
+import * as $2 from "./routes/contact.tsx";
+import * as $3 from "./routes/index.tsx";
+import * as $4 from "./routes/staff/georgie-bainbridge.tsx";
 
 const manifest = {
   routes: {
     "./routes/_404.tsx": $0,
     "./routes/_app.tsx": $1,
-    "./routes/index.tsx": $2,
-    "./routes/staff/georgie-bainbridge.tsx": $3,
+    "./routes/contact.tsx": $2,
+    "./routes/index.tsx": $3,
+    "./routes/staff/georgie-bainbridge.tsx": $4,
   },
-  islands: {
-    "./islands/Counter.tsx": $$0,
-  },
+  islands: {},
   baseUrl: import.meta.url,
 };
 
