@@ -8,7 +8,7 @@ export default function AssessmentForm() {
     birthDate: "",
     message: "",
   });
-  const [serverResponse, setServerResponse] = useState(null);
+  const [serverResponse, setServerResponse] = useState<string | null>(null);
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   const handleChange = (e: Event) => {
@@ -28,11 +28,12 @@ export default function AssessmentForm() {
         },
         body: JSON.stringify(formData),
       });
+      const txt = await response.text();
+      console.log(txt);
 
-      const data = await response.json();
       if (response.ok) {
         console.log("Form data submitted successfully");
-        setServerResponse(data);
+        setServerResponse(txt);
         setIsSubmitted(true);
       } else {
         console.log("Failed to submit form");
@@ -45,12 +46,7 @@ export default function AssessmentForm() {
   return (
     <div className="w-full md:w-1/2 p-8">
       {isSubmitted
-        ? (
-          <div>
-            <h1>Response from Server:</h1>
-            <p>{JSON.stringify(serverResponse)}</p>
-          </div>
-        )
+        ? <div dangerouslySetInnerHTML={{ __html: serverResponse || "" }}></div>
         : (
           <form
             id="request-form"
