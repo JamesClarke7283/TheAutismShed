@@ -1,6 +1,12 @@
 import { h } from "preact";
 import { useState } from "preact/hooks";
 
+interface Message {
+  name: string;
+  email: string;
+  birthDate: string;
+  message: string;
+}
 export default function AssessmentForm() {
   const [formData, setFormData] = useState({
     name: "",
@@ -8,7 +14,12 @@ export default function AssessmentForm() {
     birthDate: "",
     message: "",
   });
-  const [serverResponse, setServerResponse] = useState<string | null>(null);
+  const [serverResponse, setServerResponse] = useState<Message>({
+    name: "",
+    email: "",
+    birthDate: "",
+    message: "",
+  });
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   const handleChange = (e: Event) => {
@@ -28,12 +39,12 @@ export default function AssessmentForm() {
         },
         body: JSON.stringify(formData),
       });
-      const txt = await response.text();
-      console.log(txt);
+      const response_json = await response.json();
+      console.log(response_json);
 
       if (response.ok) {
         console.log("Form data submitted successfully");
-        setServerResponse(txt);
+        setServerResponse(response_json);
         setIsSubmitted(true);
       } else {
         console.log("Failed to submit form");
@@ -46,7 +57,25 @@ export default function AssessmentForm() {
   return (
     <div className="w-full md:w-1/2 p-8">
       {isSubmitted
-        ? <div dangerouslySetInnerHTML={{ __html: serverResponse || "" }}></div>
+        ? (
+          <div class="py-4 px-4 bg-green-200 items-centre">
+            <div class="py-4 px-4">
+              <div class="border-0 rounded border-primary">
+                <div class="border-b-2">
+                  <div class="w-full">
+                    <div class="w-full overflow-y-auto">
+                      <p class="text-center">
+                        Thanks for contacting us!{" "}
+                        <strong>{serverResponse.name}</strong>{" "}
+                        We will be in touch with you shortly.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        )
         : (
           <form
             id="request-form"

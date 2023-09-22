@@ -1,17 +1,9 @@
 import { Handlers, PageProps } from "$fresh/server.ts";
 import { SMTPClient } from "https://deno.land/x/denomailer@1.4.0/mod.ts";
-import * as renderToString from "npm:preact-render-to-string";
 
 import { EMAIL_ADDRESS, EMAIL_PASSWORD, EMAIL_TO } from "../../env.ts";
 
-interface Message {
-  name: string;
-  email: string;
-  birthDate: string;
-  message: string;
-}
-
-export const handler: Handlers<Message> = {
+export const handler: Handlers = {
   async POST(req, ctx) {
     const formData = JSON.parse(await req.text()); // Parse JSON data
     console.log("Form data backend:", formData);
@@ -44,38 +36,6 @@ export const handler: Handlers<Message> = {
 
     // Close the client
     await client.close();
-
-    const htmlElement = (
-      <div class="py-4 px-4 bg-green-200">
-        <div class="py-4 px-4">
-          <div class="border-0 rounded border-primary">
-            <div class="border-b-2">
-              <div class="w-full">
-                <div class="w-full overflow-y-auto">
-                  <p class="text-center">
-                    Thanks for contacting us! We will be in touch with you
-                    shortly.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    );
-    const html = renderToString.render(htmlElement, ctx);
-    // Return JSON directly
-    return new Response(html);
+    return new Response(JSON.stringify(formData));
   },
 };
-
-export default function AssessmentRequest(props: PageProps<Message>) {
-  const params: Message = props.data;
-  return (
-    <div className="p-4 border-b border-gray-300">
-      <p className="text-center">
-        Thanks for contacting us! We will be in touch with you shortly.
-      </p>
-    </div>
-  );
-}
