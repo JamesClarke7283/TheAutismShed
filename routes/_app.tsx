@@ -1,4 +1,5 @@
 import { AppProps } from "$fresh/server.ts";
+import Accreditations from "../components/Accreditations.tsx";
 import Header from "../components/Header.tsx";
 
 export default function App({ Component, url }: AppProps) {
@@ -26,6 +27,7 @@ export default function App({ Component, url }: AppProps) {
       <body>
         <Header active={pathname} />
         <Component />
+        <Accreditations />
         <Header active={pathname} />
       </body>
       <footer>

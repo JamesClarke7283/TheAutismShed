@@ -1,5 +1,7 @@
 import ImageCard from "../components/ImageCard.tsx";
 import AssessmentForm from "../islands/AssesmentForm.tsx";
+import AssesmentDescription from "../components/AssesmentDescription.tsx";
+
 export default function AutismAssesment() {
   return (
     <>
@@ -34,6 +36,7 @@ export default function AutismAssesment() {
 
         <AssessmentForm />
       </div>
+      <AssesmentDescription />
     </>
   );
 }

@@ -9,7 +9,9 @@ import * as $3 from "./routes/autism-assessment-and-formulation.tsx";
 import * as $4 from "./routes/contact.tsx";
 import * as $5 from "./routes/index.tsx";
 import * as $6 from "./routes/staff/georgie-bainbridge.tsx";
-import * as $$0 from "./islands/AssesmentForm.tsx";
+import * as $$0 from "./islands/AfterAssesmentAccordion.tsx";
+import * as $$1 from "./islands/AssesmentAccordion.tsx";
+import * as $$2 from "./islands/AssesmentForm.tsx";
 
 const manifest = {
   routes: {
@@ -22,7 +24,9 @@ const manifest = {
     "./routes/staff/georgie-bainbridge.tsx": $6,
   },
   islands: {
-    "./islands/AssesmentForm.tsx": $$0,
+    "./islands/AfterAssesmentAccordion.tsx": $$0,
+    "./islands/AssesmentAccordion.tsx": $$1,
+    "./islands/AssesmentForm.tsx": $$2,
   },
   baseUrl: import.meta.url,
 };
