@@ -29,6 +29,7 @@ export const handler: Handlers = {
     });
 
     // Send the email
+    /*
     await client.send({
       from: EMAIL_ADDRESS,
       to: EMAIL_TO,
@@ -37,6 +38,7 @@ export const handler: Handlers = {
       html:
         `<h1>Email from: <a href="mailto://${formData.email}">${formData.email}</a></h1><br/><h2>Birth Date: ${formData.birthDate}</h2><br/><h3>Message:</h3><p>${formData.message}</p>`,
     });
+    */
 
     // Close the client
     await client.close();
@@ -50,15 +52,10 @@ export default function AssessmentRequest(props: PageProps) {
   const { params }: { params: Record<string, string> } = props.data;
   return (
     // This can also be changed to return JSON if you like
-    <div>
-      <h1>Data Received</h1>
-      <ul>
-        {Object.entries(params).map(([key, value]) => (
-          <li key={key}>
-            {key}: {value}
-          </li>
-        ))}
-      </ul>
+    <div class="p-4 border-b border-gray-300">
+      <p class="text-center">
+        Thanks for contacting us! We will be in touch with you shortly.
+      </p>
     </div>
   );
 }
