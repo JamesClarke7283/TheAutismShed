@@ -1,5 +1,5 @@
 import ImageCard from "../components/ImageCard.tsx";
-import AssessmentForm from "../components/AssesmentForm.tsx";
+import AssessmentForm from "../islands/AssesmentForm.tsx";
 export default function AutismAssesment() {
   return (
     <>
@@ -12,7 +12,9 @@ export default function AutismAssesment() {
           <div class="hidden md:block text-center mb-6">
           </div>
           <div class="text-left mb-6">
-            <h2 class="text-2xl">Request for Assessment</h2>
+            <h2 class="text-2xl">
+              <strong>Request for Assessment</strong>
+            </h2>
           </div>
           <div class="text-left">
             <p>

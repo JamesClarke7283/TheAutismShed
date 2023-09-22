@@ -4,21 +4,26 @@
 
 import * as $0 from "./routes/_404.tsx";
 import * as $1 from "./routes/_app.tsx";
-import * as $2 from "./routes/autism-assessment-and-formulation.tsx";
-import * as $3 from "./routes/contact.tsx";
-import * as $4 from "./routes/index.tsx";
-import * as $5 from "./routes/staff/georgie-bainbridge.tsx";
+import * as $2 from "./routes/api/assesment-request.tsx";
+import * as $3 from "./routes/autism-assessment-and-formulation.tsx";
+import * as $4 from "./routes/contact.tsx";
+import * as $5 from "./routes/index.tsx";
+import * as $6 from "./routes/staff/georgie-bainbridge.tsx";
+import * as $$0 from "./islands/AssesmentForm.tsx";
 
 const manifest = {
   routes: {
     "./routes/_404.tsx": $0,
     "./routes/_app.tsx": $1,
-    "./routes/autism-assessment-and-formulation.tsx": $2,
-    "./routes/contact.tsx": $3,
-    "./routes/index.tsx": $4,
-    "./routes/staff/georgie-bainbridge.tsx": $5,
+    "./routes/api/assesment-request.tsx": $2,
+    "./routes/autism-assessment-and-formulation.tsx": $3,
+    "./routes/contact.tsx": $4,
+    "./routes/index.tsx": $5,
+    "./routes/staff/georgie-bainbridge.tsx": $6,
   },
-  islands: {},
+  islands: {
+    "./islands/AssesmentForm.tsx": $$0,
+  },
   baseUrl: import.meta.url,
 };
 
