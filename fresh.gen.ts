@@ -8,7 +8,8 @@ import * as $2 from "./routes/api/assesment-request.tsx";
 import * as $3 from "./routes/autism-assessment-and-formulation.tsx";
 import * as $4 from "./routes/contact.tsx";
 import * as $5 from "./routes/index.tsx";
-import * as $6 from "./routes/staff/georgie-bainbridge.tsx";
+import * as $6 from "./routes/staff/claire-madeira.tsx";
+import * as $7 from "./routes/staff/georgie-bainbridge.tsx";
 import * as $$0 from "./islands/AfterAssesmentAccordion.tsx";
 import * as $$1 from "./islands/AssesmentAccordion.tsx";
 import * as $$2 from "./islands/AssesmentForm.tsx";
@@ -21,7 +22,8 @@ const manifest = {
     "./routes/autism-assessment-and-formulation.tsx": $3,
     "./routes/contact.tsx": $4,
     "./routes/index.tsx": $5,
-    "./routes/staff/georgie-bainbridge.tsx": $6,
+    "./routes/staff/claire-madeira.tsx": $6,
+    "./routes/staff/georgie-bainbridge.tsx": $7,
   },
   islands: {
     "./islands/AfterAssesmentAccordion.tsx": $$0,

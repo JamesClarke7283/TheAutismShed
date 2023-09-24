@@ -6,22 +6,22 @@ export default function App({ Component, url }: AppProps) {
   const pathname = url.pathname;
   const acc_props = [
     {
-      img: "./images/accreditations/BPS.webp",
+      img: "/images/accreditations/BPS.webp",
       alt: "British Psychological Society",
       url: "https://www.bps.org.uk/",
     },
     {
-      img: "./images/accreditations/UKCP.webp",
+      img: "/images/accreditations/UKCP.webp",
       alt: "United Kingdom Council for Psychotherapy",
       url: "https://www.psychotherapy.org.uk/",
     },
     {
-      img: "./images/accreditations/HCPC.webp",
+      img: "/images/accreditations/HCPC.webp",
       alt: "Health and Care Professions Council",
       url: "https://www.hcpc-uk.org/",
     },
     {
-      img: "./images/accreditations/KAT.webp",
+      img: "/images/accreditations/KAT.webp",
       alt: "Kent Autistic Trust",
       url: "https://www.kentautistictrust.org/",
     },
